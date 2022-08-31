@@ -8,14 +8,13 @@
     <name>Project1</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor email="support@yourcompany.com" url="https://www.yourcompany.com">YourCompany</vendor>
+    <vendor email="1860343@claurendeau.qc.ca" url="https://www.yourcompany.com">Andre Laurendeau</vendor>
 
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+    Ill make you rage and uninstall the plugin
   ]]></description>
 
     <!-- Product and plugin compatibility requirements.
@@ -27,4 +26,25 @@
     <extensions defaultExtensionNs="com.intellij">
 
     </extensions>
+
+    <actions>
+        <action
+                id="StackOverflow.Search.Editor"
+                class="com.salah.projet1.project1.AskQuestionTrollAction"
+                text="Search on Youtube"
+                description="Search on Stack Overflow">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+        <action
+                id="StackOverflow.Search.Console"
+                class="com.salah.projet1.project1.AskQuestionTrollAction"
+                text="Search on Youtube"
+                description="Search on Stack Overflow">
+            <add-to-group group-id="ConsoleEditorPopupMenu" anchor="last"/>
+        </action>
+
+    </actions>
+
+
+
 </idea-plugin>
