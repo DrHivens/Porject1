@@ -17,15 +17,16 @@ public class AskQuestionTrollAction extends AnAction {
     public void randomEvent(AnActionEvent e){
         int randomNum = (int)(Math.random() *2);
         switch (randomNum){
-            case 1:
+            case 0:
                 BrowserUtil.browse("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
                 break;
-            case 2:
+            case 1:
                 Editor editor = e.getRequiredData(CommonDataKeys.EDITOR);
                 CaretModel caretModel = editor.getCaretModel();
                 String selectedText = caretModel.getCurrentCaret().getSelectedText();
 
                 String query = selectedText.replace(' ', '+');
+
                 BrowserUtil.browse("https://www.youtube.com/results?search_query=" + query);
         }
     }
