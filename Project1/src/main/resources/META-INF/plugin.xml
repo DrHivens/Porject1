@@ -43,6 +43,19 @@
             <add-to-group group-id="ConsoleEditorPopupMenu" anchor="last"/>
         </action>
 
+        <action id="com.salah.projet1.project1.PopUpAction"
+                class="com.salah.projet1.project1.PopUpAction"
+                text="Popup "
+                description="popup that will appear once in a while">
+            <override-text place="MainMenu" text="HEHEHEHE"/>
+            <keyboard-shortcut
+                    keymap="$default"
+                    first-keystroke="control C"/>
+            <mouse-shortcut
+                    keymap="$default"
+                    keystroke="doubleClick"/>
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
     </actions>
 
 
